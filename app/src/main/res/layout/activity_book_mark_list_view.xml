@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dipjyoti.browser.BookMarkListView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="@drawable/shadowbookmark">
+        <Button
+            android:id="@+id/backBtnBookmark"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/BlackCat"
+            android:background="@drawable/ic_action_backward"/>
+
+        <TextView
+            android:layout_weight=".9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bookmarks"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/AntiqueWhite"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/SilkBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/RedWine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Please Copy Excluding *Https://* Portion "/>
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewItem"
+        android:background="@color/BlackCat"
+        />
+</LinearLayout>
